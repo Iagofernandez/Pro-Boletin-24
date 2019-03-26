@@ -30,10 +30,10 @@ public class Ventana {
         marco.setSize(900, 500);
          panel.setSize(800, 400);
          
-         liText.setBounds(100, 100, 300, 20);
-         liText.setText("nombre");
-         liText2.setBounds(100, 150, 300, 20);
-         liText2.setText("password");
+         liText.setBounds(120, 110, 300, 20);
+         liText.setText("");
+         liText2.setBounds(120, 160, 300, 20);
+         liText2.setText("");
          
          etiqueta.setText("nome");
          etiqueta2.setText("password");
@@ -46,6 +46,8 @@ public class Ventana {
          
          panel.setLayout(null);
          
+         panel.add(liText);
+         panel.add(liText2);
           panel.add(etiqueta);
          panel.add(etiqueta2);
          panel.add(boton);
