@@ -10,53 +10,70 @@ import javax.swing.*;
 public class Ventana {
     //creamos los componentes
     JFrame marco;
-    JPanel panel, panel2;
-    JButton boton, boton2;
+    JPanel panel, panel2, panel3;
+    JButton boton, boton2, boton3;
     JLabel etiqueta, etiqueta2;
-    JTextArea liText, liText2;
+    JTextField textoNome;
+    JPasswordField contraseña;
+    JTextArea areaTexto;
+    JList lista;
+    
     
     public void crearVentana(){
         //instancia de los objetos creados
         marco = new JFrame("Ventanuco");
         panel = new JPanel();
+        panel2= new JPanel();
+        panel3 = new JPanel();
         boton = new JButton("Premer");
         boton2 = new JButton("Limpar");
+        boton3 = new JButton("boton");
         etiqueta = new JLabel("");
         etiqueta2 = new JLabel("");
-        liText = new JTextArea("hello", 20, 15);
-        liText2 = new JTextArea("hello", 20, 15);
-
+        textoNome = new JTextField("");
+        contraseña = new JPasswordField("contraseña");
+        areaTexto = new JTextArea("");
+        lista = new JList();
         
-        marco.setSize(900, 500);
-         panel.setSize(800, 400);
+         marco.setSize(900, 600);
+         marco.setVisible(true);
+         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          
-         liText.setBounds(120, 110, 300, 20);
-         liText.setText("");
-         liText2.setBounds(120, 160, 300, 20);
-         liText2.setText("");
+         panel.setLayout(null);
+         panel.setSize(30, 20);
+         
+         panel2.setSize(30,200);
+         
+         panel3.setSize(400,200);
+         
+         
+         textoNome.setBounds(120, 120, 300, 20);
+         textoNome.setText("");
+         contraseña.setBounds(120, 170, 300, 20);
+         contraseña.setText("");
          
          etiqueta.setText("nome");
          etiqueta2.setText("password");
          etiqueta.setBounds(50, 100, 100, 50);
-        etiqueta2.setBounds(50, 150, 100, 50);
+         etiqueta2.setBounds(50, 150, 100, 50);
         
         
-         boton.setBounds(200, 300, 100, 50);
-         boton2.setBounds(400, 300, 100,50);
+         boton.setBounds(100, 200, 100, 50);
+         boton2.setBounds(250, 200, 100,50);
          
-         panel.setLayout(null);
+        
          
-         panel.add(liText);
-         panel.add(liText2);
-          panel.add(etiqueta);
-         panel.add(etiqueta2);
-         panel.add(boton);
-         panel.add(boton2);
+         panel3.add(textoNome);
+         panel3.add(contraseña);
+         panel3.add(etiqueta);
+         panel3.add(etiqueta2);
+         panel3.add(boton);
+         panel3.add(boton2);
          marco.add(panel);
+         marco.add(panel2);
         
          
-         marco.setVisible(true);
-         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
     }
     
     
