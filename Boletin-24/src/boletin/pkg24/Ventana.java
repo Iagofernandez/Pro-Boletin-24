@@ -17,7 +17,9 @@ public class Ventana {
     JPasswordField contraseña;
     JTextArea areaTexto;
     JList lista;
-    
+    //hay que rediseñarlo casi por completo
+    //hacer que los botones hagan algo 
+    //escribir y darle al boton "boton" y que se escriba todo en el area de texto
     
     public void crearVentana(){
         //instancia de los objetos creados
